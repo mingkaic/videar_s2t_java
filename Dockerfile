@@ -7,7 +7,7 @@ RUN mkdir -p $S2T_DIR
 WORKDIR $S2T_DIR
 
 # move everything
-COPY ./microserv/s2t-sphinx $S2T_DIR
+COPY . $S2T_DIR
 
 RUN gradle build
 
